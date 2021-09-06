@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: result-app-pod
+  lablels:
+    name: result-app-pod
+    app: demo-voting-app
+spec:
+  containers:
+    - name: result-app
+      image: nithinnoronha/result-app:1
+      ports: 
+      - containerPort: 80
